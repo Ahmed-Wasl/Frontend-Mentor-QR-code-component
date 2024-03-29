@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/* Start Variables */
+:root {
+  --body-color: #d6e2f0;
+  --card-bg: white;
+  --title-color: hsl(218, 44%, 22%);
+  --detail-color: hsl(220, 15%, 55%);
+}
+/* End Variables */
+/* Start Global Rules */
+:is(*, *::before, *::after) {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--body-color);
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* End Global Rules */
+
+.card {
+  height: 440px; width: 290px;
+  background-color: var(--card-bg);
+  padding: 15px;
+  border-radius: 20px;
+  text-align: center;
+}
+.card img.card__img {
+  width: 100%;
+  border-radius: 10px;
+}
+.card h1.card__title {
+  color: var(--title-color);
+  font-size: 20px;
+  font-weight: 800;
+}
+.card p.card__detail {
+  color: var(--detail-color);
+  font-size: 15px;
+  font-weight: 300;
+}
